@@ -1,0 +1,6 @@
+framework module Pods_QapitalTask {
+  umbrella header "Pods-QapitalTask-umbrella.h"
+
+  export *
+  module * { export * }
+}

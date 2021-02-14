@@ -1,0 +1,6 @@
+framework module Pods_QapitalTaskTests {
+  umbrella header "Pods-QapitalTaskTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

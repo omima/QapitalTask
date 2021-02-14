@@ -3,13 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1DDDB4E95E49D8A1F8FBB11F /* Pods_QapitalTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5B864584C02F61304873516 /* Pods_QapitalTask.framework */; };
+		7A1864EF4262A01F70C486E5 /* Pods_QapitalTaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 655ED751F251925736C28357 /* Pods_QapitalTaskTests.framework */; };
+		81195C74EBF2821BDEDCFF98 /* Pods_QapitalTask_QapitalTaskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDABAC9C4D629670E9D9292C /* Pods_QapitalTask_QapitalTaskUITests.framework */; };
 		B751C32925D946F200498F6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B751C32825D946F200498F6A /* AppDelegate.swift */; };
 		B751C32B25D946F200498F6A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B751C32A25D946F200498F6A /* SceneDelegate.swift */; };
-		B751C32D25D946F200498F6A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B751C32C25D946F200498F6A /* ViewController.swift */; };
 		B751C33025D946F200498F6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B751C32E25D946F200498F6A /* Main.storyboard */; };
 		B751C33225D946F300498F6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B751C33125D946F300498F6A /* Assets.xcassets */; };
 		B751C33525D946F300498F6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B751C33325D946F300498F6A /* LaunchScreen.storyboard */; };
@@ -35,10 +37,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1B9EB53C3FE60D9214853187 /* Pods-QapitalTask-QapitalTaskUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QapitalTask-QapitalTaskUITests.debug.xcconfig"; path = "Target Support Files/Pods-QapitalTask-QapitalTaskUITests/Pods-QapitalTask-QapitalTaskUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		30E0C63B98CC14BD7617CE2F /* Pods-QapitalTaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QapitalTaskTests.debug.xcconfig"; path = "Target Support Files/Pods-QapitalTaskTests/Pods-QapitalTaskTests.debug.xcconfig"; sourceTree = "<group>"; };
+		32DBE6FC602205511ACD9E53 /* Pods-QapitalTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QapitalTask.debug.xcconfig"; path = "Target Support Files/Pods-QapitalTask/Pods-QapitalTask.debug.xcconfig"; sourceTree = "<group>"; };
+		655ED751F251925736C28357 /* Pods_QapitalTaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QapitalTaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C77973498C7E6106FD1962D /* Pods-QapitalTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QapitalTask.release.xcconfig"; path = "Target Support Files/Pods-QapitalTask/Pods-QapitalTask.release.xcconfig"; sourceTree = "<group>"; };
+		80D7A682E2DBFCCACD9C2489 /* Pods-QapitalTaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QapitalTaskTests.release.xcconfig"; path = "Target Support Files/Pods-QapitalTaskTests/Pods-QapitalTaskTests.release.xcconfig"; sourceTree = "<group>"; };
+		B5B864584C02F61304873516 /* Pods_QapitalTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QapitalTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B751C32525D946F200498F6A /* QapitalTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QapitalTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B751C32825D946F200498F6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B751C32A25D946F200498F6A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B751C32C25D946F200498F6A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B751C32F25D946F200498F6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B751C33125D946F300498F6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B751C33425D946F300498F6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +57,8 @@
 		B751C34625D946F300498F6A /* QapitalTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QapitalTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B751C34A25D946F300498F6A /* QapitalTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QapitalTaskUITests.swift; sourceTree = "<group>"; };
 		B751C34C25D946F300498F6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3568B30F5B8218EA9789C2E /* Pods-QapitalTask-QapitalTaskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QapitalTask-QapitalTaskUITests.release.xcconfig"; path = "Target Support Files/Pods-QapitalTask-QapitalTaskUITests/Pods-QapitalTask-QapitalTaskUITests.release.xcconfig"; sourceTree = "<group>"; };
+		EDABAC9C4D629670E9D9292C /* Pods_QapitalTask_QapitalTaskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QapitalTask_QapitalTaskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DDDB4E95E49D8A1F8FBB11F /* Pods_QapitalTask.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A1864EF4262A01F70C486E5 /* Pods_QapitalTaskTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +82,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81195C74EBF2821BDEDCFF98 /* Pods_QapitalTask_QapitalTaskUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B99C0798016EAD47ABB13CE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				32DBE6FC602205511ACD9E53 /* Pods-QapitalTask.debug.xcconfig */,
+				7C77973498C7E6106FD1962D /* Pods-QapitalTask.release.xcconfig */,
+				1B9EB53C3FE60D9214853187 /* Pods-QapitalTask-QapitalTaskUITests.debug.xcconfig */,
+				D3568B30F5B8218EA9789C2E /* Pods-QapitalTask-QapitalTaskUITests.release.xcconfig */,
+				30E0C63B98CC14BD7617CE2F /* Pods-QapitalTaskTests.debug.xcconfig */,
+				80D7A682E2DBFCCACD9C2489 /* Pods-QapitalTaskTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		60F7AF8F3F78A6638A798EC9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B5B864584C02F61304873516 /* Pods_QapitalTask.framework */,
+				EDABAC9C4D629670E9D9292C /* Pods_QapitalTask_QapitalTaskUITests.framework */,
+				655ED751F251925736C28357 /* Pods_QapitalTaskTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B751C31C25D946F200498F6A = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +119,8 @@
 				B751C33E25D946F300498F6A /* QapitalTaskTests */,
 				B751C34925D946F300498F6A /* QapitalTaskUITests */,
 				B751C32625D946F200498F6A /* Products */,
+				3B99C0798016EAD47ABB13CE /* Pods */,
+				60F7AF8F3F78A6638A798EC9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +137,12 @@
 		B751C32725D946F200498F6A /* QapitalTask */ = {
 			isa = PBXGroup;
 			children = (
-				B751C32825D946F200498F6A /* AppDelegate.swift */,
-				B751C32A25D946F200498F6A /* SceneDelegate.swift */,
-				B751C32C25D946F200498F6A /* ViewController.swift */,
-				B751C32E25D946F200498F6A /* Main.storyboard */,
-				B751C33125D946F300498F6A /* Assets.xcassets */,
-				B751C33325D946F300498F6A /* LaunchScreen.storyboard */,
-				B751C33625D946F300498F6A /* Info.plist */,
+				B751C36325D9477F00498F6A /* Application */,
+				B751C36E25D947F900498F6A /* Resources */,
+				B751C36D25D947E100498F6A /* Storyboards */,
+				B751C36B25D947C000498F6A /* Services */,
+				B751C36C25D947D000498F6A /* Models */,
+				B751C36A25D947B100498F6A /* Modules */,
 			);
 			path = QapitalTask;
 			sourceTree = "<group>";
@@ -128,6 +165,54 @@
 			path = QapitalTaskUITests;
 			sourceTree = "<group>";
 		};
+		B751C36325D9477F00498F6A /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				B751C32825D946F200498F6A /* AppDelegate.swift */,
+				B751C32A25D946F200498F6A /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		B751C36A25D947B100498F6A /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		B751C36B25D947C000498F6A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B751C36C25D947D000498F6A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B751C36D25D947E100498F6A /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				B751C33325D946F300498F6A /* LaunchScreen.storyboard */,
+				B751C32E25D946F200498F6A /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		B751C36E25D947F900498F6A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B751C33625D946F300498F6A /* Info.plist */,
+				B751C33125D946F300498F6A /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +220,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B751C34F25D946F300498F6A /* Build configuration list for PBXNativeTarget "QapitalTask" */;
 			buildPhases = (
+				2A969335D446507F73021CE5 /* [CP] Check Pods Manifest.lock */,
 				B751C32125D946F200498F6A /* Sources */,
 				B751C32225D946F200498F6A /* Frameworks */,
 				B751C32325D946F200498F6A /* Resources */,
+				01393DE7BD53C1B099E49D1A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +239,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B751C35225D946F300498F6A /* Build configuration list for PBXNativeTarget "QapitalTaskTests" */;
 			buildPhases = (
+				15FF07D2D1876043ED5D0247 /* [CP] Check Pods Manifest.lock */,
 				B751C33725D946F300498F6A /* Sources */,
 				B751C33825D946F300498F6A /* Frameworks */,
 				B751C33925D946F300498F6A /* Resources */,
@@ -170,9 +258,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B751C35525D946F300498F6A /* Build configuration list for PBXNativeTarget "QapitalTaskUITests" */;
 			buildPhases = (
+				2A0205BE49C75DDE554CC014 /* [CP] Check Pods Manifest.lock */,
 				B751C34225D946F300498F6A /* Sources */,
 				B751C34325D946F300498F6A /* Frameworks */,
 				B751C34425D946F300498F6A /* Resources */,
+				6B32A25BBBC39588816BE0BF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,12 +343,114 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		01393DE7BD53C1B099E49D1A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QapitalTask/Pods-QapitalTask-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QapitalTask/Pods-QapitalTask-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QapitalTask/Pods-QapitalTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		15FF07D2D1876043ED5D0247 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QapitalTaskTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2A0205BE49C75DDE554CC014 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QapitalTask-QapitalTaskUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2A969335D446507F73021CE5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QapitalTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B32A25BBBC39588816BE0BF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QapitalTask-QapitalTaskUITests/Pods-QapitalTask-QapitalTaskUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QapitalTask-QapitalTaskUITests/Pods-QapitalTask-QapitalTaskUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QapitalTask-QapitalTaskUITests/Pods-QapitalTask-QapitalTaskUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B751C32125D946F200498F6A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B751C32D25D946F200498F6A /* ViewController.swift in Sources */,
 				B751C32925D946F200498F6A /* AppDelegate.swift in Sources */,
 				B751C32B25D946F200498F6A /* SceneDelegate.swift in Sources */,
 			);
@@ -433,11 +625,12 @@
 		};
 		B751C35025D946F300498F6A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32DBE6FC602205511ACD9E53 /* Pods-QapitalTask.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = QapitalTask/Info.plist;
+				INFOPLIST_FILE = QapitalTask/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -451,11 +644,12 @@
 		};
 		B751C35125D946F300498F6A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C77973498C7E6106FD1962D /* Pods-QapitalTask.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = QapitalTask/Info.plist;
+				INFOPLIST_FILE = QapitalTask/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -469,6 +663,7 @@
 		};
 		B751C35325D946F300498F6A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30E0C63B98CC14BD7617CE2F /* Pods-QapitalTaskTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -490,6 +685,7 @@
 		};
 		B751C35425D946F300498F6A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80D7A682E2DBFCCACD9C2489 /* Pods-QapitalTaskTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -511,6 +707,7 @@
 		};
 		B751C35625D946F300498F6A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B9EB53C3FE60D9214853187 /* Pods-QapitalTask-QapitalTaskUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -530,6 +727,7 @@
 		};
 		B751C35725D946F300498F6A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3568B30F5B8218EA9789C2E /* Pods-QapitalTask-QapitalTaskUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
