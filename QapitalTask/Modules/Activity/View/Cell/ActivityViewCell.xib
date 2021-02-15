@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="BentonSans-Regular.otf">
+            <string>BentonSans-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="114" id="KGk-i7-Jjw" customClass="ActivityViewCell" customModule="QapitalTask" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="114"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="114"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="VlU-iP-1xV">
+                        <rect key="frame" x="16" y="16" width="32" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="32" id="GvW-Qi-SaP"/>
+                            <constraint firstAttribute="width" constant="32" id="NQg-5K-cBT"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="16"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" red="0.57647058819999997" green="0.83529411760000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="1gz-RF-9E7">
+                        <rect key="frame" x="56" y="12" width="190.5" height="75"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="97g-NK-KIQ">
+                                <rect key="frame" x="0.0" y="0.0" width="190.5" height="56"/>
+                                <string key="text">You rounded up at Whole Foods Market
+</string>
+                                <fontDescription key="fontDescription" name="BentonSans-Regular" family="BentonSans" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aBM-Gz-h0c">
+                                <rect key="frame" x="0.0" y="61" width="190.5" height="14"/>
+                                <fontDescription key="fontDescription" name="BentonSans-Regular" family="BentonSans" pointSize="12"/>
+                                <color key="textColor" red="0.5607843137254902" green="0.58823529411764708" blue="0.63921568627450975" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$2.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KCy-JY-aCX">
+                        <rect key="frame" x="269" y="12" width="35" height="19"/>
+                        <fontDescription key="fontDescription" name="BentonSans-Regular" family="BentonSans" pointSize="16"/>
+                        <color key="textColor" red="0.34509803921568627" green="0.74901960784313726" blue="0.039215686274509803" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mq2-FQ-U6m">
+                        <rect key="frame" x="16" y="113" width="288" height="1"/>
+                        <color key="backgroundColor" red="0.8901960784313725" green="0.8901960784313725" blue="0.8901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="0Da-h0-JRm"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="KCy-JY-aCX" secondAttribute="trailing" constant="16" id="0rA-PT-FW7"/>
+                    <constraint firstAttribute="trailing" secondItem="Mq2-FQ-U6m" secondAttribute="trailing" constant="16" id="GsT-9L-Xno"/>
+                    <constraint firstItem="VlU-iP-1xV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="JjC-Za-wcA"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="1gz-RF-9E7" secondAttribute="bottom" constant="13" id="Qqu-Vd-8hI"/>
+                    <constraint firstItem="1gz-RF-9E7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="Tuk-PY-QZ6"/>
+                    <constraint firstAttribute="bottom" secondItem="Mq2-FQ-U6m" secondAttribute="bottom" id="UUK-1a-l6q"/>
+                    <constraint firstItem="1gz-RF-9E7" firstAttribute="leading" secondItem="VlU-iP-1xV" secondAttribute="trailing" constant="8" id="hTm-id-YJY"/>
+                    <constraint firstItem="Mq2-FQ-U6m" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="hsr-cl-VCi"/>
+                    <constraint firstItem="KCy-JY-aCX" firstAttribute="top" secondItem="97g-NK-KIQ" secondAttribute="top" id="o6e-ey-f3g"/>
+                    <constraint firstItem="VlU-iP-1xV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="xl3-xv-KK7"/>
+                    <constraint firstItem="KCy-JY-aCX" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="1gz-RF-9E7" secondAttribute="trailing" constant="8" id="ycP-ix-Wgj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="amountLabel" destination="KCy-JY-aCX" id="rG4-7a-cgQ"/>
+                <outlet property="dateLabel" destination="aBM-Gz-h0c" id="fYc-6J-ifl"/>
+                <outlet property="messageLabel" destination="97g-NK-KIQ" id="0zb-JO-cX0"/>
+                <outlet property="userAvatar" destination="VlU-iP-1xV" id="8xF-MN-0hL"/>
+            </connections>
+            <point key="canvasLocation" x="-94.20289855072464" y="5.3571428571428568"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="user" width="512" height="512"/>
+    </resources>
+</document>
