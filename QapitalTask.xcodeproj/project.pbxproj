@@ -17,6 +17,13 @@
 		B751C33525D946F300498F6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B751C33325D946F300498F6A /* LaunchScreen.storyboard */; };
 		B751C34025D946F300498F6A /* QapitalTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B751C33F25D946F300498F6A /* QapitalTaskTests.swift */; };
 		B751C34B25D946F300498F6A /* QapitalTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B751C34A25D946F300498F6A /* QapitalTaskUITests.swift */; };
+		B751C37E25D9497400498F6A /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B751C37D25D9497400498F6A /* BaseViewController.swift */; };
+		B751C38325D949A100498F6A /* BaseAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B751C38225D949A100498F6A /* BaseAPIService.swift */; };
+		B751C38825D949E400498F6A /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B751C38725D949E400498F6A /* EndPoint.swift */; };
+		B751C38D25D94A1000498F6A /* BaseAPIServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B751C38C25D94A1000498F6A /* BaseAPIServiceError.swift */; };
+		B751C39225DA662F00498F6A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B751C39125DA662F00498F6A /* User.swift */; };
+		B751C39725DA672700498F6A /* ActivitiesWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B751C39625DA672700498F6A /* ActivitiesWrapper.swift */; };
+		B751C39C25DA684000498F6A /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B751C39B25DA684000498F6A /* Activity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +64,13 @@
 		B751C34625D946F300498F6A /* QapitalTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QapitalTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B751C34A25D946F300498F6A /* QapitalTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QapitalTaskUITests.swift; sourceTree = "<group>"; };
 		B751C34C25D946F300498F6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B751C37D25D9497400498F6A /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		B751C38225D949A100498F6A /* BaseAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAPIService.swift; sourceTree = "<group>"; };
+		B751C38725D949E400498F6A /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
+		B751C38C25D94A1000498F6A /* BaseAPIServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAPIServiceError.swift; sourceTree = "<group>"; };
+		B751C39125DA662F00498F6A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B751C39625DA672700498F6A /* ActivitiesWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesWrapper.swift; sourceTree = "<group>"; };
+		B751C39B25DA684000498F6A /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		D3568B30F5B8218EA9789C2E /* Pods-QapitalTask-QapitalTaskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QapitalTask-QapitalTaskUITests.release.xcconfig"; path = "Target Support Files/Pods-QapitalTask-QapitalTaskUITests/Pods-QapitalTask-QapitalTaskUITests.release.xcconfig"; sourceTree = "<group>"; };
 		EDABAC9C4D629670E9D9292C /* Pods_QapitalTask_QapitalTaskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QapitalTask_QapitalTaskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -170,6 +184,7 @@
 			children = (
 				B751C32825D946F200498F6A /* AppDelegate.swift */,
 				B751C32A25D946F200498F6A /* SceneDelegate.swift */,
+				B751C37D25D9497400498F6A /* BaseViewController.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -184,6 +199,9 @@
 		B751C36B25D947C000498F6A /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				B751C38225D949A100498F6A /* BaseAPIService.swift */,
+				B751C38725D949E400498F6A /* EndPoint.swift */,
+				B751C38C25D94A1000498F6A /* BaseAPIServiceError.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -191,6 +209,9 @@
 		B751C36C25D947D000498F6A /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B751C39125DA662F00498F6A /* User.swift */,
+				B751C39B25DA684000498F6A /* Activity.swift */,
+				B751C39625DA672700498F6A /* ActivitiesWrapper.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -451,8 +472,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B751C39725DA672700498F6A /* ActivitiesWrapper.swift in Sources */,
 				B751C32925D946F200498F6A /* AppDelegate.swift in Sources */,
+				B751C38325D949A100498F6A /* BaseAPIService.swift in Sources */,
+				B751C38D25D94A1000498F6A /* BaseAPIServiceError.swift in Sources */,
+				B751C38825D949E400498F6A /* EndPoint.swift in Sources */,
 				B751C32B25D946F200498F6A /* SceneDelegate.swift in Sources */,
+				B751C39C25DA684000498F6A /* Activity.swift in Sources */,
+				B751C37E25D9497400498F6A /* BaseViewController.swift in Sources */,
+				B751C39225DA662F00498F6A /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
