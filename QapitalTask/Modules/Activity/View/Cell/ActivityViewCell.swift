@@ -27,4 +27,10 @@ class ActivityViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    
+    func configure(viewModel: ActivityViewModel) {
+        messageLabel.text = viewModel.message
+        dateLabel.text = viewModel.date
+        amountLabel.text = viewModel.amount
+    }
 }

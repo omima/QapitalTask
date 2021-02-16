@@ -8,6 +8,8 @@ target 'QapitalTask' do
   # Pods for QapitalTask
   pod 'Alamofire'
   pod 'Kingfisher'
+  pod 'UIScrollView-InfiniteScroll'
+
   target 'QapitalTaskTests' do
     inherit! :search_paths
     # Pods for testing

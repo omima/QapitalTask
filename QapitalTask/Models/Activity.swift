@@ -21,3 +21,9 @@ struct  Activity : Codable {
         case date = "timestamp"
     }
 }
+
+extension Activity: Equatable, Hashable {
+    static func == (lhs: Activity, rhs: Activity) -> Bool {
+        return lhs.date == rhs.date
+    }
+}

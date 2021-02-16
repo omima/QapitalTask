@@ -3,20 +3,24 @@ PODS:
   - Kingfisher (5.14.1):
     - Kingfisher/Core (= 5.14.1)
   - Kingfisher/Core (5.14.1)
+  - UIScrollView-InfiniteScroll (1.1.0)
 
 DEPENDENCIES:
   - Alamofire
   - Kingfisher
+  - UIScrollView-InfiniteScroll
 
 SPEC REPOS:
   trunk:
     - Alamofire
     - Kingfisher
+    - UIScrollView-InfiniteScroll
 
 SPEC CHECKSUMS:
   Alamofire: df2f8f826963b08b9a870791ad48e07a10090b2e
   Kingfisher: 8050bc6f7f68cbf3908bd04df7ccbac188f6d6d6
+  UIScrollView-InfiniteScroll: 3ef456bcbe759c19f510a383cff96e6647c98c98
 
-PODFILE CHECKSUM: a1ad3b199ee7739d6a381f442672028aa973dd0d
+PODFILE CHECKSUM: 914447156591bd5cec3ee42fb40a94eb76ce710b
 
 COCOAPODS: 1.8.4

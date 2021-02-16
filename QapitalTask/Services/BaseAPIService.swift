@@ -19,7 +19,7 @@ class BaseAPIService {
           return "\(endPoint.base)\(endPoint.path)"
       }
     
-    func execute<Model: Codable>(endPoint: Endpoint, method:BaseAPIService.HTTPMethod = .get, parameters:[String:Any] = [:],completionHandler: @escaping (Swift.Result<Model, Error>) -> Void) {
+    func execute<Model: Codable>(endPoint: Endpoint, method:BaseAPIService.HTTPMethod = .get, parameters:[String:Any] ,completionHandler: @escaping (Swift.Result<Model, Error>) -> Void) {
     
         if !isConnected() {
             completionHandler(Swift.Result.failure(BaseAPIServiceError.networkError))

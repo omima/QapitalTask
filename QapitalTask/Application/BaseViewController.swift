@@ -27,7 +27,7 @@ class BaseViewController: UIViewController, BaseViewing {
     }
     
     func configureLoading() {
-        activityIndicator.color = .white
+        activityIndicator.color = .darkGray
         activityIndicator.translatesAutoresizingMaskIntoConstraints = false
         self.view.addSubview(activityIndicator)
         activityIndicator.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
