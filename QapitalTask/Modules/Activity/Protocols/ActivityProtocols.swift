@@ -34,6 +34,7 @@ protocol ActivityPresenterProtocol: class {
 protocol ActivityInteractorOutputProtocol: class {
     func activityUpdated()
     func loadStateUpdated(isLoading: Bool)
+    func activitiesHasNextPage(nextPage: Bool)
     func errorOccured(error: Error)
 }
 

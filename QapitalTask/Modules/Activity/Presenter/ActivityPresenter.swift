@@ -14,18 +14,25 @@ class ActivityPresenter {
     var interactor: ActivityInteractorInputProtocol?
     var wireFrame: ActivityWireFrameProtocol?
     
+  fileprivate  func dayDifference(from dateString : String) -> String {
+        let calendar = Calendar.current
+        let date = DateManager.shared.convertStringToDate(dateString)
+        if calendar.isDateInYesterday(date) {
+            return "Yesterday"
+        }else if calendar.isDateInToday(date) {
+            return "Today"
+        }else {
+           return DateManager.shared.convertDateString(with: dateString)
+        }
+    }
 }
 
 // MARK:- ActivityPresenterProtocol
 extension ActivityPresenter: ActivityPresenterProtocol {
     
-    
     func viewLoaded() {
         view?.showLoader()
         interactor?.loadActivities()
-        view?.addNextPageLoader(completion: {
-            self.interactor?.loadNextActivities()
-        })
     }
     
     func numberOfItems() -> Int {
@@ -35,11 +42,13 @@ extension ActivityPresenter: ActivityPresenterProtocol {
     func getItem(at index: Int) -> ActivityViewModel {
         let amount =  interactor!.activities[index].amount
         let date =  interactor!.activities[index].date
+        let convertedDate = dayDifference(from: date)
         let message =  interactor!.activities[index].message
         
-        let activityItem =  ActivityViewModel(message: message, amount: "$\(amount)", date: date, image: nil)
+        let activityItem =  ActivityViewModel(message: message, amount: "$\(amount)", date: convertedDate, image: nil)
         return activityItem
     }
+
 }
 
 // MARK:- ActivityInteractorOutputProtocol
@@ -54,6 +63,16 @@ extension ActivityPresenter: ActivityInteractorOutputProtocol {
             view?.showLoader()
         } else {
             view?.hideLoader()
+        }
+    }
+    
+    func activitiesHasNextPage(nextPage: Bool) {
+        if nextPage {
+            view?.addNextPageLoader(completion: {
+                self.interactor?.loadNextActivities()
+            })
+        } else {
+            view?.removeNextPageLoader()
         }
     }
     

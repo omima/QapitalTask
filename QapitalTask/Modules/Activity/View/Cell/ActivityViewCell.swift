@@ -28,9 +28,10 @@ class ActivityViewCell: UITableViewCell {
     }
     
     
-    func configure(viewModel: ActivityViewModel) {
-        messageLabel.text = viewModel.message
+    func configure(viewModel: ActivityViewModel) {    
+        messageLabel.attributedText = viewModel.message.htmlAttributed(size: 16)
         dateLabel.text = viewModel.date
         amountLabel.text = viewModel.amount
     }
+    
 }

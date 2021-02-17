@@ -35,6 +35,12 @@
 		B751C3DD25DA78CC00498F6A /* UIView+CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = B751C3DC25DA78CC00498F6A /* UIView+CornerRadius.swift */; };
 		B751C3F525DBC11300498F6A /* PaginatedDataLoadState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B751C3F425DBC11300498F6A /* PaginatedDataLoadState.swift */; };
 		B751C3FA25DBC22B00498F6A /* DateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B751C3F925DBC22B00498F6A /* DateManager.swift */; };
+		B751C40825DCFB2C00498F6A /* UILabel+HTMLFormate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B751C40725DCFB2C00498F6A /* UILabel+HTMLFormate.swift */; };
+		B751C41A25DD2D8100498F6A /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = B751C41925DD2D8100498F6A /* Font.swift */; };
+		B751C42425DD34BD00498F6A /* BentonSans-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = B751C3D425DA750700498F6A /* BentonSans-Bold.otf */; };
+		B751C42525DD34BD00498F6A /* BentonSans-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = B751C3D125DA750700498F6A /* BentonSans-Light.otf */; };
+		B751C42625DD34BD00498F6A /* BentonSans-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = B751C3D225DA750700498F6A /* BentonSans-Medium.otf */; };
+		B751C42725DD34BD00498F6A /* BentonSans-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = B751C3D525DA750700498F6A /* BentonSans-Regular.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,12 +98,13 @@
 		B751C3C625DA6E6400498F6A /* ActivityViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActivityViewCell.xib; sourceTree = "<group>"; };
 		B751C3D125DA750700498F6A /* BentonSans-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BentonSans-Light.otf"; sourceTree = "<group>"; };
 		B751C3D225DA750700498F6A /* BentonSans-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BentonSans-Medium.otf"; sourceTree = "<group>"; };
-		B751C3D325DA750700498F6A /* KievitCompPro-Exlig.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KievitCompPro-Exlig.ttf"; sourceTree = "<group>"; };
 		B751C3D425DA750700498F6A /* BentonSans-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BentonSans-Bold.otf"; sourceTree = "<group>"; };
 		B751C3D525DA750700498F6A /* BentonSans-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BentonSans-Regular.otf"; sourceTree = "<group>"; };
 		B751C3DC25DA78CC00498F6A /* UIView+CornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+CornerRadius.swift"; sourceTree = "<group>"; };
 		B751C3F425DBC11300498F6A /* PaginatedDataLoadState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginatedDataLoadState.swift; sourceTree = "<group>"; };
 		B751C3F925DBC22B00498F6A /* DateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateManager.swift; sourceTree = "<group>"; };
+		B751C40725DCFB2C00498F6A /* UILabel+HTMLFormate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+HTMLFormate.swift"; sourceTree = "<group>"; };
+		B751C41925DD2D8100498F6A /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		D3568B30F5B8218EA9789C2E /* Pods-QapitalTask-QapitalTaskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QapitalTask-QapitalTaskUITests.release.xcconfig"; path = "Target Support Files/Pods-QapitalTask-QapitalTaskUITests/Pods-QapitalTask-QapitalTaskUITests.release.xcconfig"; sourceTree = "<group>"; };
 		EDABAC9C4D629670E9D9292C /* Pods_QapitalTask_QapitalTaskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QapitalTask_QapitalTaskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -210,6 +217,7 @@
 		B751C36325D9477F00498F6A /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				B751C41825DD2D7200498F6A /* Theme */,
 				B751C32825D946F200498F6A /* AppDelegate.swift */,
 				B751C32A25D946F200498F6A /* SceneDelegate.swift */,
 				B751C37D25D9497400498F6A /* BaseViewController.swift */,
@@ -350,7 +358,6 @@
 				B751C3D125DA750700498F6A /* BentonSans-Light.otf */,
 				B751C3D225DA750700498F6A /* BentonSans-Medium.otf */,
 				B751C3D525DA750700498F6A /* BentonSans-Regular.otf */,
-				B751C3D325DA750700498F6A /* KievitCompPro-Exlig.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -361,8 +368,17 @@
 				B751C3DC25DA78CC00498F6A /* UIView+CornerRadius.swift */,
 				B751C3F425DBC11300498F6A /* PaginatedDataLoadState.swift */,
 				B751C3F925DBC22B00498F6A /* DateManager.swift */,
+				B751C40725DCFB2C00498F6A /* UILabel+HTMLFormate.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		B751C41825DD2D7200498F6A /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				B751C41925DD2D8100498F6A /* Font.swift */,
+			);
+			path = Theme;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -473,6 +489,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B751C42425DD34BD00498F6A /* BentonSans-Bold.otf in Resources */,
+				B751C42525DD34BD00498F6A /* BentonSans-Light.otf in Resources */,
+				B751C42625DD34BD00498F6A /* BentonSans-Medium.otf in Resources */,
+				B751C42725DD34BD00498F6A /* BentonSans-Regular.otf in Resources */,
 				B751C33525D946F300498F6A /* LaunchScreen.storyboard in Resources */,
 				B751C3C825DA6E6400498F6A /* ActivityViewCell.xib in Resources */,
 				B751C33225D946F300498F6A /* Assets.xcassets in Resources */,
@@ -606,6 +626,7 @@
 			files = (
 				B751C3FA25DBC22B00498F6A /* DateManager.swift in Sources */,
 				B751C39725DA672700498F6A /* ActivitiesWrapper.swift in Sources */,
+				B751C41A25DD2D8100498F6A /* Font.swift in Sources */,
 				B751C3B525DA690000498F6A /* ActivityAPIDataManager.swift in Sources */,
 				B751C32925D946F200498F6A /* AppDelegate.swift in Sources */,
 				B751C38325D949A100498F6A /* BaseAPIService.swift in Sources */,
@@ -620,6 +641,7 @@
 				B751C3BB25DA690000498F6A /* ActivityInteractor.swift in Sources */,
 				B751C37E25D9497400498F6A /* BaseViewController.swift in Sources */,
 				B751C3B725DA690000498F6A /* ActivityWireFrame.swift in Sources */,
+				B751C40825DCFB2C00498F6A /* UILabel+HTMLFormate.swift in Sources */,
 				B751C3B825DA690000498F6A /* ActivityView.swift in Sources */,
 				B751C39225DA662F00498F6A /* User.swift in Sources */,
 				B751C3B625DA690000498F6A /* ActivityPresenter.swift in Sources */,

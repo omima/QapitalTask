@@ -18,6 +18,7 @@ class ActivityInteractor {
         didSet {
             activities = activitiesLoadState.data
             presenter?.loadStateUpdated(isLoading: activitiesLoadState.isLoading)
+            presenter?.activitiesHasNextPage(nextPage: hasNextPage(with: activitiesLoadState.nextPage.from))
         }
     }
     
@@ -68,6 +69,16 @@ extension ActivityInteractor: ActivityInteractorInputProtocol {
                 self.presenter?.errorOccured(error: error)
             }
         }
+    }
+    
+    func hasNextPage(with date : Date) -> Bool {
+        guard let oldest = oldestDate  else { return true}
+        
+        let oldDate = DateManager.shared.convertStringToDate(oldest)
+        if date <= oldDate {
+            return false
+        }
+        return true
     }
 
 }
