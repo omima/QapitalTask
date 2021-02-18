@@ -18,9 +18,16 @@ extension String {
           <head>
             <style>
               body {
+                color: #8F96A3;
                 font-family: BentonSans-Regular;
                  font-size: \(size)px;
               }
+            strong {
+                color: #000000;
+                font-family: BentonSans-Regular;
+                font-weight: normal;
+                font-size: \(size)px;
+            }
             </style>
           </head>
           <body>
