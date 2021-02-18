@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class ActivityViewCell: UITableViewCell {
 
@@ -32,6 +33,7 @@ class ActivityViewCell: UITableViewCell {
         messageLabel.attributedText = viewModel.message.htmlAttributed(size: 16)
         dateLabel.text = viewModel.date
         amountLabel.text = viewModel.amount
+        userAvatar.kf.setImage(with: viewModel.image, placeholder: UIImage(named: "user"))
     }
     
 }

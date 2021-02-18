@@ -85,4 +85,8 @@ extension ActivityView : UITableViewDelegate , UITableViewDataSource {
         cell.configure(viewModel: presenter!.getItem(at: indexPath.row))
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        presenter?.cellWillLoad(at: indexPath.row)
+    }
 }

@@ -44,11 +44,20 @@ extension ActivityPresenter: ActivityPresenterProtocol {
         let date =  interactor!.activities[index].date
         let convertedDate = dayDifference(from: date)
         let message =  interactor!.activities[index].message
+                
+        let id = interactor!.activities[index].userId
+        let image = interactor?.getUserIfExist(with: id)?.avatar
+        let imageURl = URL(string: image ?? "")
         
-        let activityItem =  ActivityViewModel(message: message, amount: "$\(amount)", date: convertedDate, image: nil)
+        let activityItem =  ActivityViewModel(message: message, amount: "$\(amount)", date: convertedDate, image: imageURl)
         return activityItem
     }
 
+    func cellWillLoad(at index: Int) {
+        guard let actvities = interactor?.activities else {  return }
+        let userId =  actvities[index].userId
+        interactor?.loadUserInfo(with: userId)
+    }
 }
 
 // MARK:- ActivityInteractorOutputProtocol
@@ -87,5 +96,5 @@ struct ActivityViewModel {
     var message : String
     var amount : String
     var date : String
-    var image : String?
+    var image : URL?
 }

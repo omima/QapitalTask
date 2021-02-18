@@ -27,7 +27,7 @@ protocol ActivityPresenterProtocol: class {
     func viewLoaded()
     func numberOfItems() -> Int
     func getItem(at index: Int) -> ActivityViewModel
-    
+    func cellWillLoad(at index: Int)
 }
 
 // MARK: Interactor -> Presenter
@@ -46,6 +46,8 @@ protocol ActivityInteractorInputProtocol: class {
 
     func loadActivities()
     func loadNextActivities()
+    func loadUserInfo(with id : Int)
+    func getUserIfExist(with id: Int) -> User?
 }
 
 // MARK:- Wireframe Protocols

@@ -13,6 +13,7 @@ class ActivityInteractor {
     weak var presenter: ActivityInteractorOutputProtocol?
     private let service: ActivityAPIDataManager
     var oldestDate : String?
+    var users = [User]()
     
     var activitiesLoadState: PaginatedDataLoadState<Activity> = .loading {
         didSet {
@@ -31,7 +32,7 @@ class ActivityInteractor {
     init(service : ActivityAPIDataManager) {
         self.service = service
     }
-
+    
     // MARK:- Methods
     fileprivate func addUnique(newActivity: [Activity], to oldActivity: [Activity]) -> [Activity] {
         let newUniqueActivity = Set(newActivity).filter{ !Set(oldActivity.map{$0.date}).contains($0.date) }
@@ -41,6 +42,7 @@ class ActivityInteractor {
         
         return allActivity
     }
+   
 }
 
 // MARK:- ActivityInteractorInputProtocol
@@ -54,17 +56,17 @@ extension ActivityInteractor: ActivityInteractorInputProtocol {
         let  nextPage = activitiesLoadState.nextPage
         let startDate = DateManager.shared.convertDateToString(date: nextPage.from)
         let endDate = DateManager.shared.convertDateToString(date: nextPage.to)
-
+        
         service.fetchActivityList(start:startDate, to: endDate) { (result) in
             switch result {
             case .success(let activityWrapper):
                 self.oldestDate = activityWrapper.oldestDate
                 
-               let nextEndDate = DateManager.shared.getTwoWeeks(from: nextPage.from)
+                let nextEndDate = DateManager.shared.getTwoWeeks(from: nextPage.from)
                 
                 let uniqueActivites = self.addUnique(newActivity: activityWrapper.activities, to: self.activitiesLoadState.data)
                 self.activitiesLoadState = .paging(uniqueActivites, nextPage: (from: nextPage.to, to: nextEndDate))
-
+                
             case .failure(let error):
                 self.presenter?.errorOccured(error: error)
             }
@@ -80,7 +82,59 @@ extension ActivityInteractor: ActivityInteractorInputProtocol {
         }
         return true
     }
-
 }
 
 
+// MARK:- User requests
+extension ActivityInteractor {
+    
+    func loadUserInfo(with id : Int)  {
+
+        if getUserIfExist(with: id) != nil{
+            return
+        }
+        service.fetchUserInfo(with: id) { (result) in
+            switch result {
+            case .success(let user):
+                self.appendUnique(user: user)
+            case.failure(let error):
+                print(error.localizedDescription)
+            }
+        }
+    }
+    
+    func appendUnique(user : User) {
+        if !self.users.contains(user) {
+            self.users.append(user)
+            self.save(users: self.users)
+        }
+    }
+ 
+    func getUserIfExist(with id: Int) -> User? {
+        let user = getUsers().first{$0.id == id}
+        return user
+    }
+    
+}
+// MARK:- save and retrive
+extension ActivityInteractor {
+    func save(users : [User]){
+        let encoder = JSONEncoder()
+        if let encoded = try? encoder.encode(users){
+            UserDefaults.standard.set(encoded, forKey: "users")
+        }
+    }
+    
+    func getUsers() -> [User] {
+        if let objects = UserDefaults.standard.value(forKey: "users") as? Data {
+            let decoder = JSONDecoder()
+            if let objectsDecoded = try? decoder.decode(Array.self, from: objects) as [User] {
+                return objectsDecoded
+            } else {
+                return []
+            }
+        } else {
+            return []
+        }
+    }
+}

@@ -8,7 +8,7 @@
 import Foundation
 
 struct User: Codable {
-    let id: String
+    let id: Int
     let name: String
     let avatar: String
     
@@ -16,5 +16,12 @@ struct User: Codable {
         case id = "userId"
         case name = "displayName"
         case avatar = "avatarUrl"
+    }
+}
+
+
+extension User: Equatable {
+    static func == (lhs: User, rhs: User) -> Bool {
+        return lhs.id == rhs.id
     }
 }
