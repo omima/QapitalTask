@@ -15,7 +15,6 @@
 		B751C33025D946F200498F6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B751C32E25D946F200498F6A /* Main.storyboard */; };
 		B751C33225D946F300498F6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B751C33125D946F300498F6A /* Assets.xcassets */; };
 		B751C33525D946F300498F6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B751C33325D946F300498F6A /* LaunchScreen.storyboard */; };
-		B751C34025D946F300498F6A /* QapitalTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B751C33F25D946F300498F6A /* QapitalTaskTests.swift */; };
 		B751C34B25D946F300498F6A /* QapitalTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B751C34A25D946F300498F6A /* QapitalTaskUITests.swift */; };
 		B751C37E25D9497400498F6A /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B751C37D25D9497400498F6A /* BaseViewController.swift */; };
 		B751C38325D949A100498F6A /* BaseAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B751C38225D949A100498F6A /* BaseAPIService.swift */; };
@@ -41,6 +40,8 @@
 		B751C42525DD34BD00498F6A /* BentonSans-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = B751C3D125DA750700498F6A /* BentonSans-Light.otf */; };
 		B751C42625DD34BD00498F6A /* BentonSans-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = B751C3D225DA750700498F6A /* BentonSans-Medium.otf */; };
 		B751C42725DD34BD00498F6A /* BentonSans-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = B751C3D525DA750700498F6A /* BentonSans-Regular.otf */; };
+		B751C4D225DFB15400498F6A /* ActivityAPIDataManagerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B751C4D125DFB15400498F6A /* ActivityAPIDataManagerMock.swift */; };
+		B751C4E625DFB71B00498F6A /* ActivityInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B751C4E525DFB71B00498F6A /* ActivityInteractorTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,7 +77,6 @@
 		B751C33425D946F300498F6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B751C33625D946F300498F6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B751C33B25D946F300498F6A /* QapitalTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QapitalTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B751C33F25D946F300498F6A /* QapitalTaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QapitalTaskTests.swift; sourceTree = "<group>"; };
 		B751C34125D946F300498F6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B751C34625D946F300498F6A /* QapitalTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QapitalTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B751C34A25D946F300498F6A /* QapitalTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QapitalTaskUITests.swift; sourceTree = "<group>"; };
@@ -105,6 +105,8 @@
 		B751C3F925DBC22B00498F6A /* DateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateManager.swift; sourceTree = "<group>"; };
 		B751C40725DCFB2C00498F6A /* UILabel+HTMLFormate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+HTMLFormate.swift"; sourceTree = "<group>"; };
 		B751C41925DD2D8100498F6A /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		B751C4D125DFB15400498F6A /* ActivityAPIDataManagerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityAPIDataManagerMock.swift; sourceTree = "<group>"; };
+		B751C4E525DFB71B00498F6A /* ActivityInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityInteractorTests.swift; sourceTree = "<group>"; };
 		D3568B30F5B8218EA9789C2E /* Pods-QapitalTask-QapitalTaskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QapitalTask-QapitalTaskUITests.release.xcconfig"; path = "Target Support Files/Pods-QapitalTask-QapitalTaskUITests/Pods-QapitalTask-QapitalTaskUITests.release.xcconfig"; sourceTree = "<group>"; };
 		EDABAC9C4D629670E9D9292C /* Pods_QapitalTask_QapitalTaskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QapitalTask_QapitalTaskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -199,8 +201,9 @@
 		B751C33E25D946F300498F6A /* QapitalTaskTests */ = {
 			isa = PBXGroup;
 			children = (
-				B751C33F25D946F300498F6A /* QapitalTaskTests.swift */,
+				B751C4D025DFB13F00498F6A /* Mocks */,
 				B751C34125D946F300498F6A /* Info.plist */,
+				B751C4E525DFB71B00498F6A /* ActivityInteractorTests.swift */,
 			);
 			path = QapitalTaskTests;
 			sourceTree = "<group>";
@@ -381,6 +384,14 @@
 			path = Theme;
 			sourceTree = "<group>";
 		};
+		B751C4D025DFB13F00498F6A /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				B751C4D125DFB15400498F6A /* ActivityAPIDataManagerMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -411,6 +422,7 @@
 				B751C33725D946F300498F6A /* Sources */,
 				B751C33825D946F300498F6A /* Frameworks */,
 				B751C33925D946F300498F6A /* Resources */,
+				0DCB7064207A93149FD76741 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -534,6 +546,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QapitalTask/Pods-QapitalTask-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		0DCB7064207A93149FD76741 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QapitalTaskTests/Pods-QapitalTaskTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QapitalTaskTests/Pods-QapitalTaskTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QapitalTaskTests/Pods-QapitalTaskTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		15FF07D2D1876043ED5D0247 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -652,7 +681,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B751C34025D946F300498F6A /* QapitalTaskTests.swift in Sources */,
+				B751C4D225DFB15400498F6A /* ActivityAPIDataManagerMock.swift in Sources */,
+				B751C4E625DFB71B00498F6A /* ActivityInteractorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
