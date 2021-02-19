@@ -5,7 +5,7 @@
 used for api requests
 - Kingfisher
 used for background images loading
-- UIScrollView-InfiniteScroll'
+- UIScrollView-InfiniteScroll
 used for adding pagination to table view
 - Quick, Nimble, Mockit
 used for writing unit test to the project
